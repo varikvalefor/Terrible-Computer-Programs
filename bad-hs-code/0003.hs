@@ -1,0 +1,15 @@
+-- main :: IO ();  DOES NOT WORK!!!
+-- The above line indicates a lack of understanding of type signatures,
+-- which implies a lack of understanding of Haskell functions.
+-- IO [()] /= IO ().
+main = mapM putStr ["Hello, ", "world.", "\n"];
+-- To discard the return values of putStr, mapM_ should be used instead
+-- of mapM.
+-- Theorem.  The values of the above putStr statements should be
+--   discarded.
+-- Proof.
+--   For all things, a thing is forever useless only if this thing
+--   should be discarded.
+--   The values of the above putStr statements are forever useless.
+--   Therefore, the values of the above putStr statements should be
+--   discarded.  Q.E.D., yo!
