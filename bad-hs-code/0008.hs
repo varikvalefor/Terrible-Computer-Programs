@@ -3,7 +3,7 @@ import Data.List;
 isPrime :: Integer -> Bool;
 isPrime k = [a | a <- [2..k - 1], mod k a == 0] == [];
 -- The above list comprehension is fairly long and not terribly
--- unreadable.
+-- readable.
 --
 -- isPrime is re-written as isPrime'.
 
