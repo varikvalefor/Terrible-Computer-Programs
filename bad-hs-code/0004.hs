@@ -2,7 +2,7 @@ import System.Environment;
 
 party :: String -> IO ();
 party x = putStrLn $ show (read x :: Integer);
--- For all G, for all k, show (read k :: G) = k.
+-- For all G, for all k, show (read k :: G) == k.
 -- As such, function party can be simplified.
 -- In fact, function party is simplified -- see function party'.
 
