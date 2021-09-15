@@ -7,7 +7,7 @@ kenny g = (return >=> \a -> Nothing) g;
 --
 -- kenny's use of the KLEISLI composition operator is
 -- completely unnecessary.  For all {g, function f of
--- type (g -> x)}, (return g >=> f) == m (f g).
+-- type (g -> x)}, (return >=> f) g == m (f g).
 --
 -- kenny' is a simplified version of kenny.
 
